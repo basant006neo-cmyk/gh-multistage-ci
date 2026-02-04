@@ -9,3 +9,20 @@ jobs:
             - name: CheckOut
               run:  echo "Checking Out..."
      
+    Build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Build
+              run:  echo "Building Done..."
+    Test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test
+              run: echo "Testing Done"
+    Deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy
+              run: echo "Deploying..."
+    # Verify:
+    # Monitor:
