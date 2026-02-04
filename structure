@@ -1,0 +1,55 @@
+Without Docker
+node-cicd-app/
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── routes/
+│   ├── controllers/
+│
+├── ecosystem.config.js   👈 PM2
+├── .env.dev
+├── .env.prod
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── deploy-prod.yml
+│
+├── package.json
+└── README.md
+
+
+
+
+With Docker
+
+node-realworld-cicd/
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── models/
+│   ├── middlewares/
+│   └── utils/
+│
+├── config/
+│   ├── dev.env
+│   ├── prod.env
+│
+├── docker/
+│   ├── Dockerfile
+│   └── nginx.conf
+│
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── cd-prod.yml
+│
+├── docker-compose.dev.yml
+├── docker-compose.prod.yml
+├── .env.example
+├── package.json
+└── README.md
